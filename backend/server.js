@@ -7,6 +7,7 @@ import connectDB from './config/db.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
 dotenv.config()
+console.log(process.env.MONGO_URI)
 connectDB()
 const app = express()
 
